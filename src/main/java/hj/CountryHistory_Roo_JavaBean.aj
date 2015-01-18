@@ -7,12 +7,36 @@ import hj.CountryHistory;
 
 privileged aspect CountryHistory_Roo_JavaBean {
     
-    public String CountryHistory.getTest() {
-        return this.test;
+    public String CountryHistory.getCode() {
+        return this.code;
     }
     
-    public void CountryHistory.setTest(String test) {
-        this.test = test;
+    public void CountryHistory.setCode(String code) {
+        this.code = code;
+    }
+    
+    public String CountryHistory.getName() {
+        return this.name;
+    }
+    
+    public void CountryHistory.setName(String name) {
+        this.name = name;
+    }
+    
+    public Long CountryHistory.getCountryId() {
+        return this.countryId;
+    }
+    
+    public void CountryHistory.setCountryId(Long countryId) {
+        this.countryId = countryId;
+    }
+    
+    public String CountryHistory.getHistoryType() {
+        return this.historyType;
+    }
+    
+    public void CountryHistory.setHistoryType(String historyType) {
+        this.historyType = historyType;
     }
     
 }

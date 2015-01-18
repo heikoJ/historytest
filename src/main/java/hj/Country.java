@@ -9,4 +9,12 @@ import hj.history.RooHistory;
 @RooJpaActiveRecord
 @RooHistory
 public class Country {
+
+    /**
+     */
+    private String code;
+
+    /**
+     */
+    private String name;
 }

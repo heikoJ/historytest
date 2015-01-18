@@ -29,3 +29,145 @@ entity jpa --class hj.Country
 entity jpa --class hj.CountryHistory --extends hj.Country
 field string --fieldName test
 history add --type hj.Country
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2015-01-14 19:46:38
+history setup
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2015-01-17 14:21:03
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName code
+field string --fieldName name
+// [failed] history add --type hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName code
+field string --fieldName name
+history add --type hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName name
+field string --fieldName code
+history add --type hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName code
+field string --fieldName name
+history add --type hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName name
+field string --fieldName code
+history add --type hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName code
+field string --fieldName name
+history add --type hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName code
+field string --fieldName name
+history add --type hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName name
+field string --fieldName code
+history add --type hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName code
+history add --type hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName code
+history add --type hj.Country
+development mode 
+flash test
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+history add --type hj.Country
+entity jpa --class hj.Country
+field string --fieldName code
+history add --type hj.Country
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2015-01-17 20:28:08
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName code
+history add --type hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName code
+history add --type hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName code
+history add --type hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName code
+history add --type hj.Country
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2015-01-18 15:34:55
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName code
+field string --fieldName name
+history add --type hj.Country
+finder list
+entity jpa --class hj.CountryHistory
+focus --class hj.Country
+history add --type hj.Country
+history add --type hj.Country
+focu --class hj.CountryHistory
+finder list
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.CountryHistory
+field string --fieldName name
+field string --fieldName code
+history add --type hj.Country
+development mode 
+history add --type hj.Country
+// [failed] focus --class hj.Country
+entity jpa --class hj.Country
+field string --fieldName code
+field string --fieldName name
+history add --type hj.Country
+focus --class hj.CountryHistory
+finder list
+finder add --finderName findCountryHistorysByCountryIdEquals
+// [failed] focus --class hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName code
+field string --fieldName name
+history add --type hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName name
+field string --fieldName code
+history add --type hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName code
+field string --fieldName name
+history add --type hj.Country
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2015-01-18 17:13:29
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2015-01-18 17:13:56
+focus --class hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName code
+field string --fieldName name
+history add --type hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName name
+field string --fieldName code
+history add --type hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName name
+field string --fieldName code
+history add --type hj.Country
+osgi update --url file:///Users/heiko/Work/historyAddon/target/hj.history-0.1.0.BUILD-SNAPSHOT.jar --bundleSymbolicName hj.history
+entity jpa --class hj.Country
+field string --fieldName code
+field string --fieldName name
+history add --type hj.Country

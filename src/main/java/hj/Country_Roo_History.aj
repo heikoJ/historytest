@@ -4,13 +4,13 @@
 package hj;
 
 import hj.Country;
+import hj.CountryHistory;
+import java.util.List;
 
 privileged aspect Country_Roo_History {
     
-    String Country.sampleField;
-    
-    public void Country.sampleMethod() {
-        System.out.println("Hello World");
+    public List<CountryHistory> Country.getHistory() {
+        return CountryHistory.findCountryHistorysByCountryIdEquals(getId()).getResultList();
     }
     
 }

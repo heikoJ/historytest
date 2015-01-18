@@ -14,7 +14,7 @@ privileged aspect Country_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager Country.entityManager;
     
-    public static final List<String> Country.fieldNames4OrderClauseFilter = java.util.Arrays.asList("");
+    public static final List<String> Country.fieldNames4OrderClauseFilter = java.util.Arrays.asList("code", "name");
     
     public static final EntityManager Country.entityManager() {
         EntityManager em = new Country().entityManager;

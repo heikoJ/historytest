@@ -4,10 +4,40 @@
 package hj;
 
 import hj.CountryHistory;
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Version;
 
 privileged aspect CountryHistory_Roo_Jpa_Entity {
     
     declare @type: CountryHistory: @Entity;
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
+    private Long CountryHistory.id;
+    
+    @Version
+    @Column(name = "version")
+    private Integer CountryHistory.version;
+    
+    public Long CountryHistory.getId() {
+        return this.id;
+    }
+    
+    public void CountryHistory.setId(Long id) {
+        this.id = id;
+    }
+    
+    public Integer CountryHistory.getVersion() {
+        return this.version;
+    }
+    
+    public void CountryHistory.setVersion(Integer version) {
+        this.version = version;
+    }
     
 }

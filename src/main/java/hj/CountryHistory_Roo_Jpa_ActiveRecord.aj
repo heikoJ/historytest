@@ -5,11 +5,21 @@ package hj;
 
 import hj.CountryHistory;
 import java.util.List;
-import org.springframework.transaction.annotation.Transactional;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
 privileged aspect CountryHistory_Roo_Jpa_ActiveRecord {
     
-    public static final List<String> CountryHistory.fieldNames4OrderClauseFilter = java.util.Arrays.asList("test");
+    @PersistenceContext
+    transient EntityManager CountryHistory.entityManager;
+    
+    public static final List<String> CountryHistory.fieldNames4OrderClauseFilter = java.util.Arrays.asList("code", "name", "countryId", "historyType");
+    
+    public static final EntityManager CountryHistory.entityManager() {
+        EntityManager em = new CountryHistory().entityManager;
+        if (em == null) throw new IllegalStateException("Entity manager has not been injected (is the Spring Aspects JAR configured as an AJC/AJDT aspects library?)");
+        return em;
+    }
     
     public static long CountryHistory.countCountryHistorys() {
         return entityManager().createQuery("SELECT COUNT(o) FROM CountryHistory o", Long.class).getSingleResult();
@@ -48,14 +58,6 @@ privileged aspect CountryHistory_Roo_Jpa_ActiveRecord {
             }
         }
         return entityManager().createQuery(jpaQuery, CountryHistory.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
-    }
-    
-    @Transactional
-    public CountryHistory CountryHistory.merge() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        CountryHistory merged = this.entityManager.merge(this);
-        this.entityManager.flush();
-        return merged;
     }
     
 }
